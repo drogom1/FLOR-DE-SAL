@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio - Flor de Sal</title>
+  <meta name="description" content="Cardápio do Flor de Sal com entradas, pratos principais, sobremesas, bebidas, fotos e preços.">
+  <meta property="og:title" content="Cardápio - Flor de Sal">
+  <meta property="og:description" content="Entradas, pratos principais, sobremesas e bebidas da casa.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Flor de Sal Gastronomia">
+        <img class="brand-mark" src="../img/logo.png" alt="Logo Flor de Sal">
+        <span><span class="brand-name">Flor de Sal</span><span class="brand-subtitle">Gastronomia</span></span>
+      </a>
+      <nav class="main-nav" id="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="cardapio.html" aria-current="page">Cardápio</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <button class="btn btn-primary reserve" type="button">Reservar</button>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Cardápio</p>
+        <h1>Pratos autorais, preços claros e sabores brasileiros.</h1>
+        <p>Use os filtros para navegar por entradas, pratos principais, sobremesas e bebidas.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" aria-label="Filtrar cardápio">
+          <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-btn" type="button" data-filter="entradas">Entradas</button>
+          <button class="filter-btn" type="button" data-filter="principais">Pratos principais</button>
+          <button class="filter-btn" type="button" data-filter="sobremesas">Sobremesas</button>
+          <button class="filter-btn" type="button" data-filter="bebidas">Bebidas</button>
+          <button class="filter-btn" type="button" data-filter="vegetariano">Vegetariano</button>
+          <button class="filter-btn" type="button" data-filter="sem-gluten">Sem glúten</button>
+          <button class="filter-btn" type="button" data-filter="mais-pedido">Mais pedidos</button>
+          <button class="filter-btn" type="button" data-filter="ate-30">Até R$ 30</button>
+          <button class="filter-btn" type="button" data-filter="acima-50">Acima de R$ 50</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-item" data-category="entradas" data-tags="mais-pedido" data-price="38" data-description="Queijos brasileiros, embutidos artesanais, compota e pão de fermentação natural." data-nutrition="Calorias:420|Gorduras:28g|Carboidratos:22g|Proteínas:14g">
+            <div class="menu-photo photo-real-entrada" role="img" aria-label="Entrada da casa"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Tábua da Casa</h4><span class="price">R$ 38</span></div>
+              <div class="tags"><span class="tag">mais pedido</span><span class="tag">artesanal</span></div>
+              <p>Queijos brasileiros, embutidos artesanais, compota e pão de fermentação natural.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="entradas" data-tags="mais-pedido" data-price="28" data-description="Crocante por fora, cremoso por dentro, servido com maionese cítrica." data-nutrition="Calorias:310|Gorduras:18g|Carboidratos:22g|Proteínas:12g">
+            <div class="menu-photo photo-real-bolinho" role="img" aria-label="Bolinho de bacalhau"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Bolinho de Bacalhau</h4><span class="price">R$ 28</span></div>
+              <div class="tags"><span class="tag">mais pedido</span><span class="tag">até R$ 30</span></div>
+              <p>Crocante por fora, cremoso por dentro, servido com maionese cítrica.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="entradas" data-tags="vegetariano sem-gluten" data-price="26" data-description="Legumes da estação, azeite de ervas, castanhas e flor de sal." data-nutrition="Calorias:180|Gorduras:9g|Carboidratos:16g|Proteínas:4g">
+            <div class="menu-photo photo-real-vegetais" role="img" aria-label="Legumes tostados"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Legumes Tostados</h4><span class="price">R$ 26</span></div>
+              <div class="tags"><span class="tag">vegetariano</span><span class="tag">sem glúten</span></div>
+              <p>Legumes da estação, azeite de ervas, castanhas e flor de sal.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="principais" data-tags="mais-pedido sem-gluten" data-price="54" data-description="Peixe fresco grelhado com crosta de ervas, legumes tostados e azeite de limão." data-nutrition="Calorias:560|Gorduras:28g|Carboidratos:30g|Proteínas:42g">
+            <div class="menu-photo photo-real-peixe" role="img" aria-label="Peixe grelhado"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Peixe da Costa</h4><span class="price">R$ 54</span></div>
+              <div class="tags"><span class="tag">mais pedido</span><span class="tag">sem glúten</span></div>
+              <p>Peixe fresco grelhado com crosta de ervas, legumes tostados e azeite de limão.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="principais" data-tags="mais-pedido" data-price="48" data-description="Arroz cremoso, camarões salteados, alho-poró e toque de dourado no azeite." data-nutrition="Calorias:520|Gorduras:22g|Carboidratos:60g|Proteínas:28g">
+            <div class="menu-photo photo-real-risoto" role="img" aria-label="Risoto de camarão"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Risoto de Camarão</h4><span class="price">R$ 48</span></div>
+              <div class="tags"><span class="tag">cremoso</span><span class="tag">do mar</span></div>
+              <p>Arroz cremoso, camarões salteados, alho-poró e toque de dourado no azeite.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="principais" data-tags="mais-pedido" data-price="62" data-description="Filé mignon, molho reduzido, batatas rústicas e legumes da estação." data-nutrition="Calorias:710|Gorduras:36g|Carboidratos:48g|Proteínas:52g">
+            <div class="menu-photo photo-real-file" role="img" aria-label="Filé com molho reduzido"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Filé Flor</h4><span class="price">R$ 62</span></div>
+              <div class="tags"><span class="tag">mais pedido</span><span class="tag">acima de R$ 50</span></div>
+              <p>Filé mignon, molho reduzido, batatas rústicas e legumes da estação.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="principais" data-tags="vegetariano" data-price="42" data-description="Banana-da-terra, leite de coco, pimentões, coentro e arroz soltinho." data-nutrition="Calorias:460|Gorduras:16g|Carboidratos:72g|Proteínas:6g">
+            <div class="menu-photo photo-real-vegetariano" role="img" aria-label="Prato vegetariano"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Moqueca de Banana</h4><span class="price">R$ 42</span></div>
+              <div class="tags"><span class="tag">vegetariano</span><span class="tag">brasileiro</span></div>
+              <p>Banana-da-terra, leite de coco, pimentões, coentro e arroz soltinho.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="sobremesas" data-tags="mais-pedido" data-price="18" data-description="Clássico brasileiro com calda âmbar e textura cremosa." data-nutrition="Calorias:340|Gorduras:14g|Carboidratos:48g|Proteínas:6g">
+            <div class="menu-photo photo-real-sobremesa" role="img" aria-label="Pudim de leite"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Pudim de Leite</h4><span class="price">R$ 18</span></div>
+              <div class="tags"><span class="tag">mais pedido</span><span class="tag">até R$ 30</span></div>
+              <p>Clássico brasileiro com calda âmbar e textura cremosa.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="sobremesas" data-tags="" data-price="16" data-description="Mousse leve com compota fresca e farofa amanteigada." data-nutrition="Calorias:280|Gorduras:12g|Carboidratos:36g|Proteínas:4g">
+            <div class="menu-photo photo-real-mousse" role="img" aria-label="Mousse de maracujá"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Mousse de Maracujá</h4><span class="price">R$ 16</span></div>
+              <div class="tags"><span class="tag">leve</span><span class="tag">até R$ 30</span></div>
+              <p>Mousse leve com compota fresca e farofa amanteigada.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="bebidas" data-tags="mais-pedido" data-price="24" data-description="Gin, tônica, limão-siciliano e especiarias da casa." data-nutrition="Calorias:160|Gorduras:0g|Carboidratos:6g|Proteínas:0g">
+            <div class="menu-photo photo-real-drink" role="img" aria-label="Bebida autoral"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Flor Tônica</h4><span class="price">R$ 24</span></div>
+              <div class="tags"><span class="tag">autoral</span><span class="tag">até R$ 30</span></div>
+              <p>Gin, tônica, limão-siciliano e especiarias da casa.</p>
+            </div>
+          </article>
+          <article class="menu-item" data-category="bebidas" data-tags="sem-gluten" data-price="14" data-description="Frutas frescas selecionadas conforme disponibilidade do dia." data-nutrition="Calorias:95|Gorduras:0g|Carboidratos:23g|Proteínas:1g">
+            <div class="menu-photo photo-real-suco" role="img" aria-label="Suco natural"></div>
+            <div class="menu-body">
+              <div class="menu-meta"><h4>Suco da Estação</h4><span class="price">R$ 14</span></div>
+              <div class="tags"><span class="tag">sem glúten</span><span class="tag">até R$ 30</span></div>
+              <p>Frutas frescas selecionadas conforme disponibilidade do dia.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Flor de Sal Gastronomia.</p>
+      <div class="footer-links"><a href="reservas.html">Reservas</a><a href="contato.html">Contato</a></div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

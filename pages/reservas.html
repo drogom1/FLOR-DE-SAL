@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservas - Flor de Sal</title>
+  <meta name="description" content="Faça sua reserva no Flor de Sal com data, horário, número de pessoas e validação do formulário.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Flor de Sal Gastronomia">
+        <img class="brand-mark" src="../img/logo.png" alt="Logo Flor de Sal">
+        <span><span class="brand-name">Flor de Sal</span><span class="brand-subtitle">Gastronomia</span></span>
+      </a>
+      <nav class="main-nav" id="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <a class="btn btn-primary" href="reservas.html">Reservar</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Reservas</p>
+        <h1>Escolha data, horário e número de pessoas.</h1>
+        <p>O formulário valida a data, o horário e a quantidade de pessoas antes do envio. Para grupos acima de 12 pessoas, fale pelo WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <form id="reserveForm" class="contact-form info-card">
+          <h2>Dados da reserva</h2>
+          <div class="form-grid">
+            <div class="field"><label for="r-name">Nome</label><input id="r-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="r-phone">Telefone</label><input id="r-phone" name="phone" autocomplete="tel" required></div>
+            <div class="field"><label for="r-email">E-mail</label><input id="r-email" name="email" type="email" autocomplete="email"></div>
+            <div class="field"><label for="r-people">Pessoas</label><input id="r-people" name="people" type="number" min="1" max="12" value="2" required></div>
+            <div class="field"><label for="r-date">Data</label><input id="r-date" name="date" type="date" required></div>
+            <div class="field"><label for="r-time">Horário</label><input id="r-time" name="time" type="time" min="12:00" max="23:00" required></div>
+          </div>
+          <div class="field"><label for="r-note">Observações</label><textarea id="r-note" name="note" rows="4" placeholder="Preferência de mesa, restrições alimentares ou ocasião especial"></textarea></div>
+          <p class="form-note" id="reserveStatus" aria-live="polite"></p>
+          <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+
+        <aside class="info-card">
+          <h2>Antes de reservar</h2>
+          <p><strong>Horários disponíveis</strong><br>Terça a sábado, 12h às 23h. Domingo, 12h às 17h.</p>
+          <p><strong>Confirmação</strong><br>Após o envio, nossa equipe retorna pelo telefone informado.</p>
+          <p><strong>WhatsApp</strong><br><a href="https://wa.me/5511999999999">Enviar mensagem direta</a></p>
+          <p class="form-note">Ao confirmar, o site abre o WhatsApp com os dados da reserva preenchidos para envio.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Flor de Sal Gastronomia.</p>
+      <div class="footer-links"><a href="cardapio.html">Cardápio</a><a href="contato.html">Contato</a></div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
