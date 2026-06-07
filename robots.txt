@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flordesal.com.br/sitemap.xml
